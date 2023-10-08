@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Добро пожаловать</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $.get("header.html", function (data) {
+                $("header").html(data);
+            });
+        });
+        $(function () {
+            $.get("footer.html", function (data) {
+                $("footer").html(data);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section class="news">
+        <div class="news_header">
+            Новости
+        </div>
+
+        <div class="news_card_section">
+
+
+
+
+
+        </div>
+        <script src="js/bd_news.js">  </script>
+        <footer>
+
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>О центре</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $.get("header.html", function (data) {
+                $("header").html(data);
+            });
+        });
+        $(function () {
+            $.get("footer.html", function (data) {
+                $("footer").html(data);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <div class="row">
+        <div class="">
+            <div class="news-content">
+                <div class="date">
+                    <p>28</p>
+                    <small>Fri</small>
+                </div>
+                <h2 class="news-title">Title 1</h2>
+
+                <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+                    not know how to pursue pleasure…</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

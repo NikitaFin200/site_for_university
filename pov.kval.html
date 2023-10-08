@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>О центре</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $.get("header.html", function (data) {
+                $("header").html(data);
+            });
+        });
+        $(function () {
+            $.get("footer.html", function (data) {
+                $("footer").html(data);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <section class="adventages_text">
+        <div class="big_container">
+            <div class="universal_title text_center">
+                <a href="#" class="universal_link adventages_text">Программы повышения квалификации</a>
+            </div>
+            <div class="universal_text text_center">
+                Программы повышения квалификации это…<br>
+                Программа повышения квалификации направлена на совершенствование и (или) получение новой компетенции,
+                необходимой для профессиональной деятельности, и (или) повышение профессионального уровня в рамках
+                имеющейся квалификации.<BR>
+                Программа профессиональной переподготовки направлена на получение компетенции, необходимой для
+                выполнения нового вида профессиональной деятельности, приобретение новой квалификации.
+            </div>
+        </div>
+
+    </section>
+
+    <section class="adventages_plan_selection">
+        <div class="adventages_row_plan">
+
+        </div>
+    </section>
+
+    <script>var category_program = 2; </script>
+    <script src="js/bd_category_program.js">  </script>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

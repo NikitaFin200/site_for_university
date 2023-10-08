@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Добро пожаловать</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $.get("header.html", function (data) {
+                $("header").html(data);
+            });
+        });
+        $(function () {
+            $.get("footer.html", function (data) {
+                $("footer").html(data);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section class="banner">
+        <img src="icons/next_arrow.png" alt="arrow" class="banner_icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-">
+                    <div class="message_wrapper">
+                        <div class="message_header">
+                            Включите дополнительное образование в свои планы развития!
+                        </div>
+                        <div class="message_subheader">
+                            Разнообразные программы и гибкие форматы обучения для вашего личного и профессионального
+                            роста!
+                        </div>
+                        <button class="message_btn">
+                            Подать заявку на обучение
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="icons/next_arrow.png" alt="arrow" class="banner_icon second">
+        <div class="slider_points">
+            <div class="circle circle_active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+    <script src="js/slider.js"></script>
+    <section class="adventages_text">
+        <div class="adventages_header">
+            Добро пожаловать в Центр дополнительного образования и развития компетенций!
+        </div>
+        <div class="adventages_subheader">
+            В современных условиях не всегда достаточно знаний, полученных при обучении по выбранной специальности.
+            Компетенций у современного профессионала должно быть много. В этом случае можно воспользоваться возможностью
+            получения дополнительного профессионального образования.
+        </div>
+    </section>
+    <section class="adventages">
+        <div class="adventages_row">
+            <div class="adventages_card_wrapper">
+                <img src="icons/adventage1.png" alt="arrow" class="adventages_card_icon">
+                <div class="adventages_card_header">
+                    Практическая направленность
+                </div>
+                <div class="adventages_card_subheader">
+                    Акцент на получение новой профессии и актуальных профессиональных компетенций.
+                </div>
+                <div class="adventages_card_line"></div>
+            </div>
+
+
+            <div class="adventages_card_wrapper color1">
+                <img src="icons/adventage2.png" alt="arrow" class="adventages_card_icon">
+                <div class="adventages_card_header">
+                    Для школьников и взрослых
+                </div>
+                <div class="adventages_card_subheader">
+                    Образовательные программы предназначены как для школьников, так и для взрослых
+                </div>
+                <div class="adventages_card_line"></div>
+            </div>
+
+
+            <div class="adventages_card_wrapper color2">
+                <img src="icons/adventage3.png" alt="arrow" class="adventages_card_icon">
+                <div class="adventages_card_header">
+                    Краткосрочное обучение
+                </div>
+                <div class="adventages_card_subheader">
+                    Возможность получить знания и навыки в короткий срок.
+                </div>
+                <div class="adventages_card_line"></div>
+            </div>
+
+
+            <div class="adventages_card_wrapper color3">
+                <img src="icons/adventage4.png" alt="arrow" class="adventages_card_icon">
+                <div class="adventages_card_header">
+                    Разнообразие программ
+                </div>
+                <div class="adventages_card_subheader">
+                    Широкий выбор образовательных программ для школьников и взрослых
+                </div>
+                <div class="adventages_card_line"></div>
+            </div>
+
+
+            <div class="adventages_card_wrapper color4">
+                <img src="icons/adventage5.png" alt="arrow" class="adventages_card_icon">
+                <div class="adventages_card_header">
+                    Очное и заочное обучение
+                </div>
+                <div class="adventages_card_subheader">
+                    Обучение проходит не только в очном формате, но и в заочном с использованием дистанционных
+                    технологий
+                </div>
+                <div class="adventages_card_line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news_header">
+            Новости
+        </div>
+        <div class="news_subheader">
+            <a href="/news.html">Смотреть все </a>
+        </div>
+        <div class="news_card_section">
+
+
+
+
+
+        </div>
+    </section>
+    <script src="js/bd_news.js"></script>
+    <section class="maps">
+        <div class="map_text_wrapper">
+            <div class="map_header">
+                Контакты
+            </div>
+            <div class="map_subheader">
+                630005, г. Новосибирск ул. Мичурина 48 аудитория № 203 <br>
+                +7 (913) 941-54-41 (Евгения) <br>
+                +7 (962) 824-39-26 (доб. 1791) <br>
+                center@nsawt.ru <br>
+                10:00 - 19:00 <br>
+            </div>
+        </div>
+
+        <div class="map_map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62d78210b62700898ed75b3957f9a47e8083e3a67b87d729c9f88c5db244bdea&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

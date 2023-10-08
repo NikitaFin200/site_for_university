@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>О центре</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $.get("header.html", function (data) {
+                $("header").html(data);
+            });
+        });
+        $(function () {
+            $.get("footer.html", function (data) {
+                $("footer").html(data);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <section class="adventages_text">
+        <div class="big_container">
+            <div class="universal_title text_center">
+                <a href="#" class="universal_link adventages_text">Общеобразовательные программы</a>
+            </div>
+            <div class="universal_text text_center">
+                Общеобразовательные программы это…<br>
+                Целью подготовительных курсов для поступления является комплексное
+                повторение всего материала, более детальное разъяснение тем, а также решение типичных заданий. Это
+                серьезная дополнительная подготовка,
+                которая увеличивает шансы поступления в вуз.
+            </div>
+        </div>
+
+    </section>
+
+    <section class="adventages_plan_selection">
+        <div class="adventages_row_plan">
+
+        </div>
+    </section>
+
+    <script> var category_program = 1; </script>
+    <script src="js/bd_category_program.js">  </script>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
